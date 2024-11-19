@@ -32,3 +32,8 @@ defineQuery(`*[_type == "startup" && _id == $id][0] {
       pitch
     
 }`);
+
+export const STARTUP_VIEW_QUERY = defineQuery(`*[_type == "startup" && _id == $id][0]
+  {
+  _id, views
+  }`);
